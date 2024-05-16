@@ -1,24 +1,19 @@
-import React from 'react'
-import {FaTrashAlt} from 'react-icons/fa'
-import ItemList from './ItemList'
-const Content = ({items,  handleCheck, handleDelete}) => {
- 
-  
- 
+import React from "react";
+import ItemList from "./ItemList";
+const Content = ({ items, handleCheck, handleDelete }) => {
   return (
     <main>
       {items.length ? (
         <ItemList
-        items={items}
-        handleCheck={handleCheck}
-        handleDelete={handleDelete}/>
-      
-      
+          items={items}
+          handleCheck={handleCheck}
+          handleDelete={handleDelete}
+        />
       ) : (
-        <p style={{marginTop : '2rem'}}>Your list is empty </p>
+        <p style={{ marginTop: "2rem" }}>Your list is empty </p>
       )}
     </main>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;
